@@ -1,15 +1,46 @@
-\documentclass{article}
+\documentclass{report}
 
 \include{preamble}
 
 
 \title{Compendium Physica}
-
+\author[1]{Daniel Steinmaurer}
+\affil{Technische Physik, Technische Universität Wien}
 
 \begin{document}
 
 \maketitle
 
+\newpage
 \tableofcontents
+
+\chapter{Fundamentals of Physics}
+\include{chapters/gdp/i/gpd_ia}
+\include{chapters/gdp/i/gpd_ib}
+
+\include{chapters/gdp/ii/gpd_iia}
+\include{chapters/gdp/ii/gpd_iib}
+
+
+\chapter{Radiation Physics}
+\include{chapters/radiation_phys}
+
+
+\chapter{Analysis}
+\include{chapters/analysis/ana_i}
+\include{chapters/analysis/ana_ii}
+
+
+\chapter{Practical Analysis}
+\include{chapters/prama/pm_i}
+\include{chapters/prama/pm_ii}
+
+
+\chapter{Linear Algebra}
+\include{chapters/line_alge}
+
+
+\chapter{Ecology and Sustainable Development}
+\include{chapters/ecology}
 
 \end{document}
