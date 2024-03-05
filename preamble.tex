@@ -1,7 +1,21 @@
+\usepackage{amsmath}
+\newcommand{\abs}[1]{\lvert #1 \rvert}
 
 \usepackage{graphicx}
 \graphicspath{{media/}}
 
 \usepackage{authblk}
 
-\usepackage{import}
+\usepackage{hyperref}
+%\hypersetup{linktocpage}
+
+\usepackage{caption}
+
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\newtcolorbox{note}[1][]{breakable,sharp corners, skin=enhancedmiddle jigsaw,parbox=false,
+boxrule=0mm,leftrule=2mm,boxsep=0mm,arc=0mm,outer arc=0mm,attach title to upper,
+after title={:~}, coltitle=black,colback=gray!10,colframe=black, title={Note},
+fonttitle=\bfseries,#1}
+
+\usepackage{tabularx}
