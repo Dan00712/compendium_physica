@@ -1,6 +1,6 @@
 \documentclass{report}
 
-\include{preamble}
+\input{preamble}
 
 
 \title{Compendium Physica}
@@ -8,12 +8,14 @@
 \affil{Technische Physik, Technische Universität Wien}
 
 \begin{document}
+\pagenumbering{roman}
 
 \maketitle
 
 \newpage
 \tableofcontents
 
+\pagenumbering{arabic}
 \chapter{Fundamentals of Physics}
 \include{chapters/gdp/i/gpd_ia}
 \include{chapters/gdp/i/gpd_ib}
@@ -42,5 +44,9 @@
 
 \chapter{Ecology and Sustainable Development}
 \include{chapters/ecology}
+
+\listoffigures
+
+\listoftables
 
 \end{document}
