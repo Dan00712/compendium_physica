@@ -1,5 +1,9 @@
 \usepackage{amsmath}
 \newcommand{\abs}[1]{\lvert #1 \rvert}
+\newcommand{\E}{\text{E}}
+\newcommand{\sd}[1]{\mathop{d#1}}
+
+\usepackage{esdiff}
 
 \usepackage{graphicx}
 \graphicspath{{media/}}
@@ -13,9 +17,18 @@
 
 \usepackage[most]{tcolorbox}
 \tcbuselibrary{skins, breakable}
+
 \newtcolorbox{note}[1][]{breakable,sharp corners, skin=enhancedmiddle jigsaw,parbox=false,
-boxrule=0mm,leftrule=2mm,boxsep=0mm,arc=0mm,outer arc=0mm,attach title to upper,
-after title={:~}, coltitle=black,colback=gray!10,colframe=black, title={Note},
+after title={:~}, coltitle=white,colback=gray!10,colframe=black, title={Note},
 fonttitle=\bfseries,#1}
+
+\newtcolorbox{important}[1][]{breakable,sharp corners, skin=enhancedmiddle ,parbox=false,
+after title={:~}, coltitle=white,colback=red!10,colframe=red, title={Important},
+fonttitle=\bfseries,#1}
+
+\newtcolorbox{example}[1][]{breakable,sharp corners, skin=enhancedmiddle ,parbox=false,
+after title={:~}, coltitle=white,colback=blue!10,colframe=blue, title={Important},
+fonttitle=\bfseries,#1}
+
 
 \usepackage{tabularx}
